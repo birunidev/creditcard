@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'myFont';
+  src: url("../creditcard.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.credit__card {
+  position: relative;
+  z-index: 1;
+  width: 330px;
+  margin: 90px auto 0;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  background: linear-gradient(111.42deg, #223B61 0%, #27519E 103.39%);
+  -webkit-box-shadow: 0px 0px 50px rgba(112, 112, 112, 0.25);
+          box-shadow: 0px 0px 50px rgba(112, 112, 112, 0.25);
+  color: white;
+}
+
+.credit__card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.credit__card__header .check-img {
+  width: 20px;
+}
+
+.credit__card__header .visa-img {
+  width: 60px;
+}
+
+.credit__card__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.credit__card__number .number {
+  margin-right: 15px;
+  font-size: 22px;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.credit__card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.credit__card__footer .card-holder {
+  margin-right: 20px;
+}
+
+.credit__card__footer .expires {
+  margin-right: 10px;
+}
+
+.credit__card__footer .title {
+  font-size: 14px;
+  margin: 30px 0 0;
+}
+
+.forms {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
+  -webkit-transform: translateY(-130px);
+          transform: translateY(-130px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 140px 15px 35px 15px;
+  -webkit-box-shadow: 0px 20px 80px rgba(190, 190, 190, 0.75);
+          box-shadow: 0px 20px 80px rgba(190, 190, 190, 0.75);
+  border-radius: 24px;
+}
+
+.forms .number-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.forms .number-input input {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.forms .name-forms {
+  width: 100%;
+}
+
+.forms .name-forms input {
+  width: 90%;
+}
+
+.forms .other-forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forms .other-forms .expiration-form {
+  margin-right: 20px;
+}
+
+.forms .other-forms .expired-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.forms .other-forms .expired-form select {
+  margin: 10px 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #C6C6C6;
+  font-family: 'Poppins';
+  color: #233F6D;
+  font-weight: 600;
+  outline: none;
+}
+
+.forms .other-forms .expired-form select:focus {
+  border: 1px solid #a7a7a7;
+}
+
+.forms .other-forms .cvv-form input {
+  width: 50%;
+}
+
+.forms p {
+  font-size: 14px;
+  color: #233F6D;
+  font-weight: 600;
+}
+
+.forms input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #C6C6C6;
+  margin: 5px 0;
+  outline: none;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+.forms input:focus {
+  border: 1px solid #a7a7a7;
+}
+
+.fw-bold {
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */

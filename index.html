@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container" id="root">
+
+        <div class="credit__card">
+            <div class="credit__card__header">
+                <img class="check-img" src="check.png" alt="">
+                <img class="visa-img" src="visa.png" alt="">
+            </div>
+            <div class="credit__card__number">
+                <div v-for="number in cardNumber " class="number ">
+                    {{number}}
+                </div>
+            </div>
+            <div class="credit__card__footer">
+                <div class="card-holder">
+                    <p class="title">card holder</p>
+                    <p class="fw-bold">{{ cardHolder }}</p>
+                </div>
+                <div class="expires">
+                    <p class="title">Expires</p>
+                    <p class="fw-bold">{{expires.month}}/{{expires.year}}</p>
+                </div>
+                <div class="cvv">
+                    <p class="title">CVV2</p>
+                    <p class="fw-bold">{{cvv}}</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="forms">
+            <div class="number-forms">
+                <p>Card Number</p>
+                <div class="number-input">
+                    <input type="text" v-model="cardNumber[0]">
+                    <input type="text" v-model="cardNumber[1]">
+                    <input type="text" v-model="cardNumber[2]">
+                    <input type="text" v-model="cardNumber[3]">
+                </div>
+            </div>
+            <div class="name-forms">
+                <p>Card Holder</p>
+                <input type="text" v-model="cardHolder">
+            </div>
+            <div class="other-forms">
+                <div class="expiration-form">
+                    <p>Expiration Date</p>
+                    <div class="expired-form">
+                        <select name="" id="" v-model="expires.month">
+                            <option v-for="(name, index) in monthName" v-bind:value="index+1">{{name}}
+                            </option>
+                        </select>
+                        <select name="" id="" v-model="expires.year">
+                            <option value="" selected>Year</option>
+                            <option value="15">2015</option>
+                            <option value="16">2016</option>
+                            <option value="17">2017</option>
+                            <option value="18">2018</option>
+                            <option value="19">2019</option>
+                            <option value="20">2020</option>
+                            <option value="21">2021</option>
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="cvv-form">
+                    <p>CVV2</p>
+                    <input type="text" v-model="cvv">
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
